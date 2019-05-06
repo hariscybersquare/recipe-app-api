@@ -7,7 +7,7 @@ class AdminSiteTestsHaris(TestCase):
 
     def setUp(self):
         self.client = Client()
-        self.admin_user = get_user_model().objects.create_super_user(
+        self.admin_user = get_user_model().objects.create_superuser(
                 email='haris.np@gmail.com',
                 password='12345'
             )

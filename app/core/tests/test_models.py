@@ -32,7 +32,7 @@ class ModelTests(TestCase):
         """
         Test cases to check if the create super user is working fine.
         """
-        user = get_user_model().objects.create_super_user(
+        user = get_user_model().objects.create_superuser(
                         "test@test.com",
                         'test123')
         self.assertTrue(user.is_superuser)
